@@ -1,3 +1,6 @@
+
+![](2023-07-29-12-35-40.png)
+- link to aliter colab https://colab.research.google.com/drive/10HE7oZKILbRgTak7_qGeNIqeVYN0stn9?usp=sharing
 1) r2score?
 Ans = 0.53
 ```
@@ -122,6 +125,19 @@ r2score = r2_score(y_test, y_pred)
 np.round(r2score, 2)
 ```
 
-10) 
+10) What is the value of the intercept?
 
+Ans: `array([-28636.05])`
+
+
+```
 model.intercept_.round(2)
+```
+
+11) 
+![](2023-07-29-12-33-49.png)
+```
+model.predict(np.array([88.46, 4, 9, 1, 0, 1, 0, 1, 0, 1]).reshape(1,-1))
+```
+
+Ans : 50762.93
